@@ -17,6 +17,7 @@ export default function ContactPage() {
       body: JSON.stringify({ name, email, message }),
     });
     const data = await response.json();
+    console.log(data);
     setSubmitted(data.message);
   };
 

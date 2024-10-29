@@ -1,4 +1,5 @@
 // src/pages/index.tsx
+import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
@@ -6,6 +7,15 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <>
+      <Head>
+        {" "}
+        <title>My Next.js App</title>
+        <meta
+          name="description"
+          content="This is a description of my Next.js application."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header />
       <main style={{ padding: "20px" }}>
         <h1>Welcome to Our Website</h1>
