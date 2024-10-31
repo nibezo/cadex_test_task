@@ -22,7 +22,7 @@ const VideoComponent = () => {
     },
   };
 
-  return <YouTube videoId="dQw4w9WgXcQ" opts={opts} />;
+  return <YouTube videoId="dQw4w9WgXcQ" opts={opts} className="video" />;
 };
 
 interface IData {

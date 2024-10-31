@@ -22,11 +22,39 @@ export const WelcomeBlock = styled.section`
     & h1,
     p {
       width: 390px;
+      /* Adaptive */
+      @media screen and (max-width: 423px) {
+        width: 321px;
+      }
     }
+  }
+  /* Adaptive */
+  @media screen and (max-width: 1250px) {
+    .main-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .main-wrapper {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 60px;
+    }
+    height: 650px;
+    margin-top: 45px;
   }
 `;
 
-export const WelcomeBlockText = styled.div``;
+export const WelcomeBlockText = styled.div`
+  /* Adaptive */
+  @media screen and (max-width: 571px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
 
 export const WelcomeBlockVideo = styled.div`
   flex: 1;
@@ -34,6 +62,22 @@ export const WelcomeBlockVideo = styled.div`
   align-items: flex-start;
   justify-content: center;
   padding-left: 240px;
+  /* Adaptive */
+  @media screen and (max-width: 1250px) {
+    padding-left: 0px;
+    flex: 0;
+  }
+  @media screen and (max-width: 1250px) {
+    .video > iframe {
+      width: 400px;
+    }
+  }
+  @media screen and (max-width: 445px) {
+    .video > iframe {
+      width: 310px;
+      height: 200px;
+    }
+  }
 `;
 
 export const ContentBlock = styled.section`
@@ -73,6 +117,17 @@ export const ContentBlock = styled.section`
         color: #757575;
         line-height: 1.3;
       }
+    }
+  }
+  /* Adaptive */
+  @media screen and (max-width: 1250px) {
+    & .content-blocks {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 1250px) {
+    & .content-blocks {
+      row-gap: 44px;
     }
   }
 `;

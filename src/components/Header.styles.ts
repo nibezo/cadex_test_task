@@ -26,4 +26,37 @@ export const HeaderWrapper = styled.div`
       ${ButtonStyles}
     }
   }
+  /* Adaptive */
+  @media screen and (max-width: 1250px) {
+    & .header {
+      width: 900px;
+    }
+  }
+  @media screen and (max-width: 950px) {
+    & .header {
+      width: 680px;
+    }
+  }
+  @media screen and (max-width: 715px) {
+    & .header {
+      width: 500px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    & .header {
+      width: 380px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    & .header {
+      .contact-button {
+        width: 120px;
+      }
+    }
+  }
+  @media screen and (max-width: 420px) {
+    & .header {
+      width: 310px;
+    }
+  }
 `;

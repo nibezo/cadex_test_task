@@ -9,10 +9,21 @@ export const MainStyles = styled.main`
   background-color: #f5f5f5;
   height: 100vh;
   row-gap: 30px;
+  @media screen and (max-height: 760px) {
+    height: 114vh;
+  }
 `;
 
 export const HeadingStyles = styled.h1`
   font-size: 72px;
+  text-align: center;
+  /* Adaptive */
+  @media screen and (max-width: 780px) {
+    font-size: 48px;
+  }
+  @media screen and (max-width: 410px) {
+    font-size: 32px;
+  }
 `;
 
 export const FormStyles = styled.form`
@@ -41,6 +52,7 @@ export const InputTextField = styled(TextField.Root)`
   height: 40px;
   border-radius: 8px;
   outline-color: #2c2c2c;
+  color: black;
 `;
 
 export const StyledTextArea = styled(TextArea)`
