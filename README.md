@@ -22,7 +22,7 @@ Deployed application is here: [cadex.ilyadev.tech](https://cadex.ilyadev.tech/).
 
 For the form I use POST-request `api/submitForm`, while developing you can reach it via `http://127.0.0.1:3000/api/submitForm`. You can use Postman for this simple API testing.
 
-![main](image.png)
+![main](assets/image.png)
 How the [main page](https://cadex.ilyadev.tech/) looks.
 
 ### Features
@@ -34,7 +34,7 @@ How the [main page](https://cadex.ilyadev.tech/) looks.
 - **Performance Enhancements**: Employs code splitting and lazy loading for quick load times.
 - **Fixed Header and Footer**: Ensures easy navigation with persistent headers and footers.
 
-![form](image-1.png)
+![form](assets/image-1.png)
 How the [form](https://cadex.ilyadev.tech/contact) looks.
 
 ## Table of Contents
