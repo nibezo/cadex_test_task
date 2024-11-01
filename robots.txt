@@ -1,0 +1,8 @@
+# robots.txt for https://cadex.ilyadev.tech
+
+User-agent: *
+Disallow: /private/
+Allow: /
+
+# Sitemap location
+Sitemap: https://cadex.ilyadev.tech/sitemap.xml
